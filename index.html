@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" "type="text"></div>
+        <div class="buttons">
+            <button class="button"onclick="">C</button>
+             <button class="button" onclick="">DEL</button>
+             <button class="button" onclick="">.</button>
+             <button class="button" onclick="">÷</button>
+             <button class="button" onclick="">7</button>
+             <button class="button" onclick="">8</button>
+             <button class="button" onclick="">9</button>
+             <button class="button" onclick="">×</button>
+             <button class="button" onclick="">4</button>
+             <button class="button" onclick="">5</button>
+             <button class="button" onclick="">6</button>
+             <button class="button" onclick="">-</button>
+             <button class="button" onclick="">1</button>
+             <button class="button" onclick="">2</button>
+             <button class="button" onclick="">3</button>
+             <button class="button" onclick="">+</button>
+             <button class="button" onclick="">=</button>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    margin-bottom: 15px;
+    padding: 17px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: right;
+    background-color: lightgrey;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.button {
+    padding: 15px;
+    font-size: 3.5vw;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+}
+</style>
